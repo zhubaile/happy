@@ -1,0 +1,74 @@
+/* http://www.yidengxuetang.com/recruit/#index_nav_outline*/
+*{  margin: 0; padding: 0; font-size: 16px; }
+.clearfix:before, .clearfix:after {  content: "";  display: table;  line-height: 0;  }
+.clearfix:after {  clear: both;  }
+.clearfix {  *zoom:1;  }
+.happy{ min-width: 1000px; margin: 0 auto; background: #4e4e4e;}
+.happy .main{width: 960px; margin: 0 auto; }                   /*前面两项内容 导航栏*/
+.main .main-nav{  width: 960px;  background: url(../image/shouye/02.jpg); margin: 0 auto;  }
+.main .main-nav .main-nav-le{  position: absolute;  margin-left: 30px;  line-height: 40px;  }
+.main .main-nav .main-nav-le p{  color: #ffffff;  font-size: 20px;  }
+.main .main-nav .main-nav-ion{  position: relative;  text-align: center;  width: 600px;  margin: 0 auto;  }
+.main .main-nav .main-nav-ion .ion-t{  position: relative;  float: left;  width: 100px;  height: 45px;  text-align: center;  }
+.main .main-nav .main-nav-ion .ion-t a{color: #ffffff; display: block;text-align:center;line-height: 45px;text-decoration: none; }
+.main .main-nav .main-nav-ion .ion-t:hover{  background: #2c2e30;  }
+.main .main-nav .main-nav-ion .ion-t a:hover{  color: #fd832a;  }
+/*导航下面的图片，文字和点击试听*/
+.main .main-goal{  background: url(../image/shouye/top.jpg) no-repeat;  background-size: 100% 100%;  width: 960px;
+    height: 400px;  margin: 0 auto;  }
+.main .main-goal .main-goal-top{  width: 400px;  margin: 0 auto;  }
+.main .main-goal .main-goal-top p{  font-size: 30px;  padding-top: 70px;  color: black;  font-weight: bold;  }
+.main .main-goal .main-goal-font{  width: 750px;  margin: 0 auto;  padding-top: 60px;  }
+.main .main-goal .main-goal-font h1{  font-size: 60px;  text-align: center;  color: #ffffff;  }
+.main .main-goal .main-goal-font p{  text-align: center;  font-size: 25px;  color: red;  }
+.main .main-goal .main-goal-font .box{  width: 100px;  height: 40px;  line-height: 40px; margin: 10px auto;  text-align: center; }
+.main .main-goal .main-goal-font a{  border: 2px solid black; font-size: 20px; color: red; display: block; border-radius: 10px;  }
+.main .main-goal .main-goal-font a:hover{  background: url(../image/shouye/fx.jpg) no-repeat;  color: #ffffff;  }
+/*文字导航*/
+.happy .menu{  width: 960px; margin: 0 auto; background: #ffffff; height: 500px;  }
+.happy .menu .menu-nav{  float: left;  }
+.happy .menu .menu-nav .box{  margin: 5px auto;  border: 2px solid black;  }
+.happy .menu .menu-nav .box li{  width: 250px;  height: 50px;  border: 1px solid black;  text-align: center;  }
+.happy .menu .menu-nav .box li a{  color: black;  line-height: 50px;  display: block;  }
+.happy .menu .menu-nav .box li:hover{  background: red;  color: #ffffff;  }
+.happy .menu .menu-nav .box li a:hover{  color: #ffffff;  font-weight: bold;  }
+.happy .menu .menu-photo{  position: relative;  width: 700px;  height: 500px;  float: right;  }
+.menu .menu-photo .ht{  position: absolute;  left: 5px;  top: 0;  }
+/*ht*/
+.menu .menu-photo .ht .inbox{  background: url("../image/shouye/fx.jpg") no-repeat;  width: 300px; height: 245px;  position: absolute;
+    left: 0;  top: 0;  background-size: 100% 100%;  display: none;  }
+.menu .menu-photo .ht .txt{  font-size: 20px;  position: absolute;  display: none;  top: 30px;
+    left: 30px;  color: white;  font-weight: bold;  }
+.menu .menu-photo .txt p{  font-size: 30px;  color: red;  }
+.menu .menu-photo .ht a:hover .inbox{  display: block;  }
+.menu .menu-photo .ht a:hover .txt{  display: block;  }
+/*cs*/
+.menu .menu-photo .cs {  position: absolute;  left: 5px;  top: 252px;  }
+.menu .menu-photo .cs .inbox{  background: url("../image/shouye/fx.jpg") no-repeat;  width: 300px; height: 245px;  position: absolute;
+    left: 0;  top: 0;  background-size: 100% 100%;  display: none;  }
+.menu .menu-photo .cs .txt{  font-size: 20px;  position: absolute;  display: none;  top: 30px;
+    left: 30px;  color: #ffffff;  font-weight: bold;  }
+.menu .menu-photo .cs a:hover .inbox{  display: block;  }
+.menu .menu-photo .cs a:hover .txt{  display: block;  }
+/*js*/
+.menu .menu-photo .js {  position: absolute;  left: 350px;  top: 60px;  }
+.menu .menu-photo .js .inbox{  background: url("../image/shouye/fx.jpg") no-repeat;  width: 300px; height: 350px;  position: absolute;
+    left: 0;  top: 0;  background-size: 100% 100%;  display: none; border-radius: 20px;  }
+.menu .menu-photo .js .txt{  font-size: 20px;  position: absolute;  display: none;  top: 60px;
+    left: 30px;  color: #ffffff;  font-weight: bold;  }
+.menu .menu-photo .js a:hover .inbox{  display: block;  }
+.menu .menu-photo .js a:hover .txt{  display: block;  }
+/*点击联系我们按钮*/
+.menu .menu-photo .menu-touth{ position: absolute; right: 10px; bottom: 10px; border: 1px solid blue;
+    width: 120px; height: 40px; text-align: center; background: blue;}
+.menu .menu-photo .menu-touth a{  color: #ffffff;  line-height: 40px; font-weight: bold;  }
+.menu .menu-photo .menu-touth:hover{  background: black;  }
+.happy .end{
+    width: 100%;
+    height: 120px;
+    background: #323232;
+    text-align: center;
+}
+.end ul li{
+    color: #fff;
+}
