@@ -4,7 +4,7 @@
 .clearfix:after {  clear: both;  }
 .clearfix {  *zoom:1;  }
 .happy{ min-width: 1000px; margin: 0 auto; background: #4e4e4e;}
-.happy .main{width: 960px; margin: 0 auto; }                   /*Ç°ÃæÁ½ÏîÄÚÈİ µ¼º½À¸*/
+.happy .main{width: 960px; margin: 0 auto; }                   /*å‰é¢ä¸¤é¡¹å†…å®¹ å¯¼èˆªæ */
 .main .main-nav{  width: 960px;  background: url(../image/shouye/02.jpg); margin: 0 auto;  }
 .main .main-nav .main-nav-le{  position: absolute;  margin-left: 30px;  line-height: 40px;  }
 .main .main-nav .main-nav-le p{  color: #ffffff;  font-size: 20px;  }
@@ -13,7 +13,7 @@
 .main .main-nav .main-nav-ion .ion-t a{color: #ffffff; display: block;text-align:center;line-height: 45px;text-decoration: none; }
 .main .main-nav .main-nav-ion .ion-t:hover{  background: #2c2e30;  }
 .main .main-nav .main-nav-ion .ion-t a:hover{  color: #fd832a;  }
-/*µ¼º½ÏÂÃæµÄÍ¼Æ¬£¬ÎÄ×ÖºÍµã»÷ÊÔÌı*/
+/*å¯¼èˆªä¸‹é¢çš„å›¾ç‰‡ï¼Œæ–‡å­—å’Œç‚¹å‡»è¯•å¬*/
 .main .main-goal{  background: url(../image/shouye/top.jpg) no-repeat;  background-size: 100% 100%;  width: 960px;
     height: 400px;  margin: 0 auto;  }
 .main .main-goal .main-goal-top{  width: 400px;  margin: 0 auto;  }
@@ -24,7 +24,7 @@
 .main .main-goal .main-goal-font .box{  width: 100px;  height: 40px;  line-height: 40px; margin: 10px auto;  text-align: center; }
 .main .main-goal .main-goal-font a{  border: 2px solid black; font-size: 20px; color: red; display: block; border-radius: 10px;  }
 .main .main-goal .main-goal-font a:hover{  background: url(../image/shouye/fx.jpg) no-repeat;  color: #ffffff;  }
-/*ÎÄ×Öµ¼º½*/
+/*æ–‡å­—å¯¼èˆª*/
 .happy .menu{  width: 960px; margin: 0 auto; background: #ffffff; height: 500px;  }
 .happy .menu .menu-nav{  float: left;  }
 .happy .menu .menu-nav .box{  margin: 5px auto;  border: 2px solid black;  }
@@ -58,17 +58,25 @@
     left: 30px;  color: #ffffff;  font-weight: bold;  }
 .menu .menu-photo .js a:hover .inbox{  display: block;  }
 .menu .menu-photo .js a:hover .txt{  display: block;  }
-/*µã»÷ÁªÏµÎÒÃÇ°´Å¥*/
+/*ç‚¹å‡»è”ç³»æˆ‘ä»¬æŒ‰é’®*/
 .menu .menu-photo .menu-touth{ position: absolute; right: 10px; bottom: 10px; border: 1px solid blue;
-    width: 120px; height: 40px; text-align: center; background: blue;}
-.menu .menu-photo .menu-touth a{  color: #ffffff;  line-height: 40px; font-weight: bold;  }
+    width: 120px; height: 40px; text-align: center; background: blue; cursor: pointer;}
+.menu .menu-photo .menu-touth a{  color: #ffffff;  line-height: 40px; font-weight: bold; display: block; }
 .menu .menu-photo .menu-touth:hover{  background: black;  }
-.happy .end{
-    width: 100%;
-    height: 120px;
-    background: #323232;
-    text-align: center;
-}
-.end ul li{
-    color: #fff;
-}
+/*éšè—*/
+.happy .hide{  width: 960px;  height: 350px;  background: #ffffff;  margin: 0 auto; display: none; }
+.hide .hide-left{  float: left;  width: 420px;  height: 350px;  text-align: center;  }
+.hide .hide-right{  float: right;  width: 538px;  height: 350px;  }
+.hide .hide-right .hide-right-box{  width: 530px;  margin: 20px auto;}
+.hide .hide-right .hide-right-box tr{ line-height: 50px;}
+.hide .hide-right .hide-right-box td{  font-size: 22px; }
+.hide .hide-right .hide-right-box .sky{ color: red; font-size: 22px; display: none; font-family: "åæ–‡æ–°é­";}
+.hide .hide-right .hide-right-box .box-tr.error .sky{ display: block;}
+.hide .hide-right .hide-right-box td input{  width: 200px;  height: 30px;  border: 2px solid blue;  }
+.hide .hide-right .hide-right-box td input:focus{  border: 2px solid red;  }/*ç‚¹å‡»ä¹‹åè¾¹æ¡†å‘ç”Ÿå˜åŒ–*/
+.hide .hide-right .hide-right-box>p{  font-size: 20px;  color: #fd832a;  margin-top: 20px;  }
+.hide .hide-right .hide-right-box>div{  width: 150px; height: 40px; background: black; text-align: center; margin:  20px auto;  }
+.hide .hide-right .hide-right-box>div a{cursor: pointer;  color: #ffffff;  font-size: 28px;  line-height: 40px; display: block; font-family: "åæ–‡æ–°é­"; }
+/*åº•éƒ¨*/
+.happy .end{  width: 100%;  height: 120px;  background: #323232;  text-align: center;  }
+.end ul li{  color: #fff;  }
