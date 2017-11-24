@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <title>乐课堂</title>
     <link rel="stylesheet" href="css/base.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css"/>
     <link rel="stylesheet" href="css/index.css" type="text/css"/>
 </head>
 <body>
 <div class="happy">
     <div class="main">
         <div class="main-nav">
-            <!-- <div class="main-nav-le">
-                <p>乐课堂logo</p>
-            </div> -->
             <div class="main-nav-le">
-                <img style="padding-top:4px;" src="./image/logo.png">
+                <img src="image/shouye/le.jpg" alt=""/>
             </div>
+            <!--导航栏-->
             <div class="main-nav-ion">
                 <ul class="clearfix">
                     <li class="ion-t"><a href="javascript:;">网站首页</a></li>
@@ -27,6 +26,7 @@
                 </ul>
             </div>
         </div>
+        <!--大图片-->
         <div class="main-goal">
             <div class="main-goal-top">
                 <p>乐学堂-专为培养前端精英</p>
@@ -34,64 +34,163 @@
             <div class="main-goal-font">
                 <h1>你值得拥有好的工作境遇！</h1>
                 <p>适学对象：具有html，css，javascript基础人员</p>
-                <div class="box"><a href="javascript:;">免费试听</a></div>
             </div>
         </div>
     </div>
-    <div class="menu">
-        <div class="menu-nav">
-            <ul class="box">
-                <li><a href="javascript:;">《html古话今说》</a></li>
-                <li><a href="javascript:;">html基本讲解</a></li>
-                <li><a href="javascript:;">html工作流</a></li>
-            </ul>
-            <ul class="box">
-                <li><a href="javascript:;">《CSS古话今谈》</a></li>
-                <li><a href="javascript:;">Web高性能动画与渲染原理</a></li>
-                <li><a href="javascript:;">CSS工作流</a></li>
-            </ul>
-            <ul class="box">
-                <li><a href="javascript:;">《javascript古话今讲》</a></li>
-                <li><a href="javascript:;">javascript简单介绍</a></li>
-                <li><a href="javascript:;">javascript工作流</a></li>
-            </ul>
+    <!--课程大纲-->
+    <div class="outline">
+        <div class="outline-top">
+            <h1>课程大纲，节节干货</h1>
+            <p>只因专业，所以自信。精研细磨，紧贴社会，时时更新</p>
         </div>
-        <div class="menu-photo">
-            <div class="ht">
-                <a href="javascript:;" target="_blank" onfocus="this.blur()">
-                    <img src="image/shouye/ht.jpg">
-                    <div class="inbox"></div>
-                    <div class="txt">关于html技术的简单介绍  HTML语言是一种标记语言，是设计web页面的基础。
-                        <br/><br/>
-                    <p>您感兴趣么？</p>
-                    </div>
-                </a>
+        <div class="outline-font">
+            <div class="model">
+                <img src="image/shouye/a.png" alt=""/>
+                <p>《javascript语言新发展》<a href="javascript:;">暂未开放</a></p>
+                <p>含：ES6，TypeScript，Linux等</p>
             </div>
-            <div class="cs">
-                <a href="javascript:;" target="_blank" onfocus="this.blur()">
-                    <img src="image/shouye/cs.jpg">
-                    <div class="inbox"></div>
-                    <div class="txt"> 在网页制作时采用层叠样式表技术，可以有效地对页面的布局、字体、
-                        颜色、背景和其它效果实现更加精确的控制。<br/><br/>
-                        <p>您感兴趣么？</p>
-                    </div>
-                </a>
+            <div class="model">
+                <img src="image/shouye/b.png" alt=""/>
+                <p>《大话Nade72般变化》<a href="javascript:;">暂未开放</a></p>
+                <p>含：Express，KOA2，NodeJS源代码分析等</p>
             </div>
-            <div class="js">
-                <a href="javascript:;" target="_blank" onfocus="this.blur()">
-                    <img src="image/shouye/js.jpg">
-                    <div class="inbox"></div>
-                    <div class="txt">javascript是一种动态类型、弱类型、基于原型的语言,用来给HTML网页增加动态功能。
-                        <br/><br/>
-                        <p>想不想加入我们？</p>
-                    </div>
-                </a>
+            <div class="model">
+                <img src="image/shouye/c.png" alt=""/>
+                <p>《前端工程化那些事儿》<a href="javascript:;">暂未开放</a></p>
+                <p>含：Webpack2，Gulp，Rollup，FIS等</p>
             </div>
-            <div class="menu-touth">
-                <a id="touch">点击联系我们</a>
+            <div class="model">
+                <img src="image/shouye/d.png" alt=""/>
+                <p>《性能优化与工程师》<a href="javascript:;">暂未开放</a></p>
+                <p>含：直播平台，Webapp优化等</p>
+            </div>
+            <div class="model">
+                <img src="image/shouye/e.png" alt=""/>
+                <p>《MV*框架大集合》<a href="javascript:;">暂未开放</a></p>
+                <p>含：Veu2，React，Angular2等</p>
+            </div>
+            <div class="model">
+                <img src="image/shouye/f.png" alt=""/>
+                <p>《网页重构之道》<a href="javascript:;">暂未开放</a></p>
+                <p>含：CSS3D，CSS工作流，渲染原理等</p>
             </div>
         </div>
     </div>
+    <!--持续学习流程-->
+    <div class="study">
+        <img src="image/shouye/study.png" alt=""/>
+    </div>
+    <!--导师团队-->
+    <div class="tutor">
+        <div class="tutor-top">
+            <h1>来看看谁带你学习</h1>
+            <p>我们的讲师团队由三位主讲和一线名企大牛讲师团组成，主讲带你细致入微，名企讲师带你深入企业内部实战分享</p>
+        </div>
+        <div class="tutor-center">
+            <div class="teacher">
+                <img src="image/shouye/tutor/zls.jpg" alt=""/>
+                <div class="teacher-ity">
+                    <span class="one">朱老师</span>&nbsp;
+                    <span class="two">乐学堂创始人-专业</span>&nbsp;
+                    <span class="three">曾负责百度地图性能方向，后负责腾讯地图构架方面</span>
+                    <p>超过五年前端开发经验，经历asp时代到现在的大前端时代，入行七年，经历过无数项目的磨练</p>
+                    <p>成功案例：百度地图&nbsp;&nbsp;腾讯地图等等</p>
+                </div>
+            </div>
+            <div class="teacher">
+                <img src="image/shouye/tutor/zhangls.jpg" alt=""/>
+                <div class="teacher-ity">
+                    <span class="one">张老师</span>&nbsp;
+                    <span class="two">金牌讲师-专注</span>&nbsp;
+                    <span class="three">资深技术宅，具有10年开发经验和4年教学经验</span>
+                    <p>超过五年前端开发经验，经历asp时代到现在的大前端时代，入行七年，经历过无数项目的磨练</p>
+                    <p>成功案例：百度地图&nbsp;&nbsp;腾讯地图等等</p>
+                </div>
+            </div>
+            <div class="teacher">
+                <img src="image/shouye/tutor/qls.jpg" alt=""/>
+                <div class="teacher-ity">
+                        <span class="one">庆老师</span>&nbsp;
+                        <span class="two">金牌讲师-专心</span>&nbsp;
+                        <span class="three">曾负责百度地图性能方向，后负责腾讯地图构架方面</span>
+                    <p>超过五年前端开发经验，经历asp时代到现在的大前端时代，入行七年，经历过无数项目的磨练</p>
+                    <p>成功案例：百度地图&nbsp;&nbsp;腾讯地图等等</p>
+                </div>
+            </div>
+            <div class="icon">
+                <div class="icon-ico">
+                    <img src="image/shouye/tutor/qq.png" alt=""/>
+                    <p>腾讯资深前端</p>
+                </div>
+                <div class="icon-ico">
+                    <img src="image/shouye/tutor/bd.PNG" alt=""/>
+                    <p>百度前端工程师</p>
+                </div>
+                <div class="icon-ico">
+                    <img src="image/shouye/tutor/wph.png" alt=""/>
+                    <p>唯品会高级前端</p>
+                </div>
+                <div class="icon-ico">
+                    <img src="image/shouye/tutor/dd.png" alt=""/>
+                    <p>滴滴高级前端</p>
+                </div>
+                <div class="icon-ico">
+                    <img src="image/shouye/tutor/mt.PNG" alt=""/>
+                    <p>美团高级前端</p>
+                </div>
+                <div class="icon-ico">
+                    <img src="image/shouye/tutor/tb.png" alt=""/>
+                    <p>阿里前端专家</p>
+                </div>
+            </div>
+            <div class="free-advice"><a href="javascript:;">免费名师咨询</a></div>
+        </div>
+    </div>
+    <!-- 新闻中心-->
+    <div class="journalism">
+        <h1>新闻中心</h1>
+        <ul>
+            <li><div class="elos">1</div><p class="elos-p">室内装修家装设计师谈技巧客户经常提到的25个问题</p></li>
+            <li><div class="elos">2</div><p class="elos-p">CAD选择对象时选中了不该选中的线条如何取消</p></li>
+            <li><div class="elos">3</div><p class="elos-p">如何辨别郑州室内设计培训班哪里更专业</p></li>
+            <li><div class="elos">4</div><p class="elos-p">郑州设计室内学院邀请您学习客厅什么板更好一点</p></li>
+            <li><div class="elos">5</div><p class="elos-p">室内设计师盘点房子装修后后悔的事情</p></li>
+            <li><div class="elos">6</div><p class="elos-p">一品讲解室内设计软件培训CAD常见的几个问题</p></li>
+            <li><div class="elos">7</div><p class="elos-p">CAD软件里输入问题后双击不能编辑文字了怎么办</p></li>
+            <li><div class="elos">8</div><p class="elos-p">解决如何在CAD中把两个室内设计施工图拼接成一张图纸</p></li>
+            <li><div class="elos">9</div><p class="elos-p">CAD软件中文修复几个最有效的办法-乐学堂知道</p></li>
+            <li><div class="elos">10</div><p class="elos-p">常见的室内装修风格都有哪些？家装风格大全</p></li>
+        </ul>
+    </div>
+    <!--优惠-->
+    <div class="recruit">
+        <h1>一期火热招募中</h1>
+        <p>学习方式灵活，优惠大礼不断；思想为你享厚，梦想再次起航。</p>
+        <div class="recruit-box">
+            <div class="one">
+                <p>开课日期</p>
+                <span>火热报名中</span>
+            </div>
+            <div class="one">
+                <p>全款报名</p>
+                <span>最高立减500</span>
+            </div>
+            <div class="one">
+                <p>为你所享</p>
+                <span>专职大礼包</span>
+            </div>
+            <div class="one">
+                <p>虚位以待</p>
+                <span>剩余名额不多</span>
+            </div>
+        </div>
+        <div class="refer"><a href="javascript:;">咨询具体优惠详情</a></div>
+        <div class="hide-touth">
+            <a id="touch">点击联系我们</a>
+        </div>
+    </div>
+    <div class="clearfix"></div><!--清除浮动-->
+    <!--隐藏-->
     <div class="hide">
         <div class="hide-left">
             <img src="image/shouye/shoushi.jpg" alt=""/>
@@ -121,13 +220,20 @@
         </div>
     </div>
     <div class="clearfix"></div><!--为了清除浮动效果-->
+    <!--现场考察-->
+    <div class="site">
+        <h1>现场考察</h1>
+        <p>地址：河南省郑州市博学路与龙子湖交叉口河南经贸职业学院</p>
+        <img src="image/shouye/site.jpg" alt=""/>
+    </div>
+    <!--结束-->
     <div class="end">
         <ul>
             <br/>
+            <li>乐课堂&nbsp;>&nbsp;关于我们&nbsp;>&nbsp;联系我们</li>
             <li>地址：河南经贸职业学院计算机工程学院16软件一班</li>
             <li>邮箱：zyangzhuang@qq.com</li>
-            <li>手机号：15617975412</li>
-            <li>版权所有</li>
+            <li>版权所有@</li>
         </ul>
         <p></p>
     </div>

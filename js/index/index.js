@@ -1,16 +1,19 @@
 /**
  * Created by lenovo on 2017/11/22.
  */
+/**
+ * Created by lenovo on 2017/11/22.
+ */
 var $touch=$("#touch");
 $touch.on("click",function(){
- $(".hide").toggle();
+    $(".hide").toggle();
 });
 
 var $name = $("#name")
     , $call = $("#call")
     , $postbox = $("#postbox")
     ,$sub=$("#sub")
-;
+    ;
 //事件绑定 当用户名输入框改变时触发
 $name.on("change", function(){
     $name.closest(".box-tr").removeClass("error")
@@ -37,6 +40,6 @@ $sub.on("click",function(){
         $postbox.closest('.box-tr').addClass("error").find(".sky").text("您的邮箱不能为空！")
         return
     }
-    alert("提交成功");
+    alert("提交成功,请耐心等待");
     window.location.reload();
 });
