@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>{if isset($SEO['title']) && !empty($SEO['title'])}{$SEO['title']}{/if}{$SEO['site_title']}</title>
+    <meta name="keywords" content="{$SEO['keyword']}">
+    <meta name="description" content="{$SEO['description']}">
+    <link rel="stylesheet" href="{CSS_PATH}happy/base.css" type="text/css"/>
+    <link rel="stylesheet" href="{CSS_PATH}happy/animate.min.css" type="text/css"/>
+    <link rel="stylesheet" href="{CSS_PATH}happy/index.css" type="text/css"/>
+</head>
+<body>
+<div class="happy">
+<div class="main">
+    <div class="main-nav">
+        <div class="main-nav-le">
+            <img src="{IMG_PATH}image/shouye/le.png" alt=""/>
+        </div>
+        <!--导航栏-->
+        <div class="main-nav-ion">
+            {pc:content action="category" catid="0" num="10" siteid="$siteid" order="listorder ASC"}
+            <ul class="clearfix">
+                <li class="ion-t"><a  href="{siteurl($siteid)}">网站首页</a></li>
+                {loop $data $r}
+                <li class="ion-t"><a href="{$r[url]}">{$r[catname]}</a></li>
+                {/loop}
+            </ul>
+            {/pc}
+        </div>
+    </div>
+    <!--大图片-->
+    <div class="main-goal">
+        <div class="main-goal-top">
+            <p>乐学堂-专为培养前端精英</p>
+        </div>
+        <div class="main-goal-font">
+            <h1>你值得拥有好的工作境遇！</h1>
+            <p>适学对象：具有html，css，javascript基础人员</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+{template "content","head"}
+{pc:content action="lists" catid="$catid" order="id DESC" num="5" page="$page"}
+<!-- <div class="title">{$CATEGORYS[$catid][catname]}</div>
+ <div class="list-box">-->
+<ul class="clearfix">
+    {loop $data $key $val}
+    <li  class="clearfix">
+        <a class="img" href="{$val[url]}">
+            <img src="{if $val[thumb]}{thumb($val[thumb],220,170)}{else}{IMG_PATH}qk_img/noImg.jpg{/if}" alt="{$val[title]}" title="{$val[title]}"/>
+        </a>
+        <a class="body" href="{$val[url]}">
+            <span class="head">{$val[title]}</span>
+            <span class="info">{$val[description]}</span>
+        </a>
+    </li>
+    {/loop}
+</ul>
+<!--</div>-->
+<div id="pages" class="text-c page">
+    {$pages}
+</div>
+{/pc}
+{template "content","foot"}

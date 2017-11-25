@@ -1,0 +1,126 @@
+/* http://www.yidengxuetang.com/recruit/#index_nav_outline*/
+*{  margin: 0; padding: 0; font-size: 16px;  }
+ h1{  font-size: 35px;  text-align: center;}
+.clearfix:before, .clearfix:after {  content: "";  display: table;  line-height: 0;  }
+.clearfix:after {  clear: both;  }
+.clearfix {  *zoom:1;  }
+.happy{ min-width: 1000px; margin: 0 auto;}
+.happy .main{width: 100%; margin: 0 auto; }                   /*前面两项内容 导航栏*/
+.main .main-nav{  width:100%;  margin: 0 auto; background: #34363b;  height: 80px; }
+.main .main-nav .main-nav-le{  position: relative; float: left;  margin-left: 80px;}
+.main .main-nav .main-nav-le img{  color: #ffffff; width: 200px; height: 80px;}
+.main .main-nav .main-nav-ion{ position: relative; float: left;  text-align: center;  width: 600px; margin-left: 40px;}
+.main .main-nav .main-nav-ion .ion-t{  position: relative;  float: left;  width: 100px;  height: 80px;  text-align: center;  }
+.main .main-nav .main-nav-ion .ion-t a{color: #ffffff; display: block;text-align:center;line-height: 80px;text-decoration: none; }
+.main .main-nav .main-nav-ion .ion-t:hover{  background: #2c2e30;  }
+.main .main-nav .main-nav-ion .ion-t a:hover{  color: #fd832a;  }
+/*导航下面的图片，文字和点击试听*/
+.main .main-goal{  background: url(../image/shouye/top.jpg) no-repeat;  background-size: 100% 100%;  width: 100%;
+    height: 400px;  margin: 0 auto; }
+.main .main-goal .main-goal-top{  width: 400px;  margin: 0 auto;  }
+.main .main-goal .main-goal-top p{  font-size: 30px;  padding-top: 70px;  color: black;  font-weight: bold;  }
+.main .main-goal .main-goal-font{  width: 750px;  margin: 0 auto;  padding-top: 60px;  }
+.main .main-goal .main-goal-font h1{  font-size: 60px;  text-align: center;  color: #ffffff;  }
+.main .main-goal .main-goal-font p{  text-align: center;  font-size: 25px;  color: red;  }
+/*课程大纲*/
+.happy .outline{  width: 960px;  margin: 0 auto;}
+ .outline .outline-top{  text-align: center;padding-top: 30px; }
+ .outline .outline-top p{  font-size: 20px;  margin-top: 20px; }
+.outline .outline-font{margin-top: 20px;margin-right: -30px;}
+/* .outline .outline-font .model{  float: left;  margin-left: 10px; margin-top: 20px;  border: 2px solid #3c3c3c; border-radius: 10px;  }
+.outline .outline-font .model p{  text-align: center;  line-height: 30px;  padding-top: 10px;  padding-bottom: 5px;  font-size: 14px;  }
+.outline .outline-font .model p>a{  color: black;font-weight: bold;  }
+.outline .outline-font .model p>a:hover{  color: red;  } */
+.outline .outline-font .model {
+    display: block;
+    float: left;
+    margin-right: 28px;
+    margin-bottom: 28px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius:60px/5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 35px inset;
+}
+
+.outline .outline-font .model h1 {
+    /* text-align: center; */
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+    color: #696a70;
+    margin: 0;
+    padding: 20px 15px 0 15px;
+}
+.outline .outline-font .model p{
+    font-size: 14px;
+    line-height: 17px;
+    color: #9a9a9a;
+    padding: 10px 15px 20px;
+}
+.outline .outline-font .model:hover{
+    box-shadow: 0 3px 6px #ccc;
+    overflow: hidden;
+    border: 1px solid #dad8d8
+}
+/*持续学习流程*/
+.happy .study{ clear: both; width: 100%; padding-top: 40px;}
+.happy .study img{ width: 100%;}
+/*讲师团队*/
+.happy .tutor{  width: 960px; margin: 0 auto;  }
+.tutor .tutor-top{  text-align: center;padding-top: 30px;  }
+.tutor .tutor-top p{  font-size: 18px;  margin-top: 20px; }
+.tutor .tutor-center{  }
+.tutor .tutor-center .teacher{  clear: both;  width: 900px;  margin: 30px auto;  height: 220px;  }
+.tutor .tutor-center .teacher .teacher-ity{  float: right;  margin-top: 40px;  }
+.tutor .tutor-center .teacher .teacher-ity .one{  font-size: 20px;  font-weight: bold;  margin: 10px;  }
+.tutor .tutor-center .teacher .teacher-ity .two{  background: red;  color: #ffffff;  border-radius: 20px;  padding: 5px; }
+.tutor .tutor-center .teacher .teacher-ity .three{  border: 1px solid #48c490;  color: #48c490;  border-radius: 15px;  }
+.tutor .tutor-center .teacher .teacher-ity p{  line-height: 20px;  margin-top: 20px;  }
+.tutor .tutor-center .icon{  }
+.tutor .tutor-center .icon .icon-ico{  float: left;  margin-left: 30px; margin-bottom: 50px; }
+.tutor .tutor-center .icon .icon-ico p{  text-align: center;  cursor: pointer; }
+.tutor .tutor-center .icon .icon-ico p:hover{  color: red; }
+.tutor .tutor-center .free-advice{  clear: both;  width: 200px;  height: 50px;  margin: 50px auto;  background: red;  text-align: center;  border-radius: 20px;  }
+.tutor .tutor-center .free-advice a{  font-size: 30px;  color: #ffffff;  font-family: 华文新魏;  line-height: 50px; }
+/*新闻中心*/
+.happy .journalism{  width: 960px;  margin: 0 auto; }
+.happy .journalism ul{  margin-top: 40px; }
+.happy .journalism ul li{  float: left;  width: 480px;  height: 50px;  text-align: center;  margin-top: 10px; }
+.happy .journalism ul li .elos{  width: 30px;height: 30px;background: red;color: #ffffff;line-height: 30px; }
+.happy .journalism ul li .elos-p{  position: relative;  margin-top: -28px;  cursor: pointer; }
+.happy .journalism ul li .elos-p:hover{ color: red; font-weight: bold;}
+/*报名优惠*/
+/*.happy .recruit{ clear: both; width: 960px;  margin: 0 auto;  background: #ffffff; padding-top: 50px;}
+.happy .recruit>p{  text-align: center;  font-size: 20px; margin-top: 20px; }
+.recruit .recruit-box{  margin-left: 150px;  margin-top: 50px;  margin-bottom: 250px;  }
+.recruit .recruit-box .one{  float: left;  width: 120px;  height: 120px;  border: 5px solid #fb9952;  margin-left: 20px;  border-radius: 70px;  }
+.recruit .recruit-box .one p{  text-align: center;  padding-top: 20px;  padding-bottom: 15px;  }
+.recruit .recruit-box .one span{  text-align: center;  color: #fd842b;  font-size: 20px;  }
+.recruit .refer{  clear: both;  width: 150px;  height: 40px;  background: #e53e3e;  margin: 0 auto; border-radius: 10px; }
+.recruit .refer a{  text-align: center;  font-size: 22px;  color: #ffffff;  line-height: 40px;  display: block;  font-family: "华文新魏";  }
+.recruit .hide-touth{ border: 1px solid black; float: right; border-radius: 10px;
+    width: 120px; height: 40px; text-align: center; background: #e53e3e; cursor: pointer;}
+.hide-touth a{  color: #ffffff;  line-height: 40px; font-weight: bold; display: block; }
+.hide-touth:hover{  background: black;  }*/
+/*隐藏*/
+/*.happy .hide{  width: 960px;  height: 350px;  background: #ffffff;  margin: 0 auto; display: none;}
+.hide .hide-left{  float: left;  width: 420px;  height: 350px;  text-align: center;  }
+.hide .hide-right{  float: right;  width: 538px;  height: 350px;  }
+.hide .hide-right .hide-right-box{  width: 530px;  margin: 20px auto;}
+.hide .hide-right .hide-right-box tr{ line-height: 50px;}
+.hide .hide-right .hide-right-box td{  font-size: 22px; }
+.hide .hide-right .hide-right-box .sky{ color: red; font-size: 22px; display: none; font-family: "华文新魏";}
+.hide .hide-right .hide-right-box .box-tr.error .sky{ display: block;}
+.hide .hide-right .hide-right-box td input{  width: 200px;  height: 30px;  border: 2px solid blue;  }
+.hide .hide-right .hide-right-box td input:focus{  border: 2px solid red;  }/!*点击之后边框发生变化*!/
+.hide .hide-right .hide-right-box>p{  font-size: 20px;  color: red;  margin-top: 20px;  }
+.hide .hide-right .hide-right-box>div{  width: 150px; height: 40px; background: black; text-align: center; margin:  20px auto; border-radius: 10px; }
+.hide .hide-right .hide-right-box>div a{cursor: pointer;  color: #ffffff;  font-size: 28px;  line-height: 40px; display: block; font-family: "华文新魏"; }*/
+/*现场考察*/
+.happy .site{  width: 100%;  text-align: center;  margin: 0 auto; }
+.happy .site h1{  margin-top: 40px; }
+.happy .site p{  text-align: center;  font-size: 25px; margin-top: 20px; font-family: 华文新魏; margin-bottom: 30px;  }
+.happy .site img{  width: 100%;  height: 400px;}
+/*底部*/
+.happy .end{  width: 100%;  height: 120px;  background: #323232;  text-align: center;  }
+.end ul li{  color: #fff;  }
