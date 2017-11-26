@@ -72,7 +72,7 @@
 .tutor .tutor-center{  }
 .tutor .tutor-center .teacher{  clear: both;  width: 900px;  margin: 30px auto;  height: 220px; }
 .tutor .tutor-center .teacher .teacher-ity{  float: right; margin-top: 50px; margin-right: 500px; }
-.tutor .tutor-center .teacher .teacher-ity .one{  font-size: 20px;  font-weight: bold;  margin: 10px;  }
+.tutor .tutor-center .teacher .teacher-ity .one{  font-size: 20px;  font-weight: bold;  margin: 10px; }
 .tutor .tutor-center .teacher .teacher-ity .two{  background: red;  color: #ffffff;  border-radius: 20px;  padding: 5px; }
 .tutor .tutor-center .teacher .teacher-ity p{  line-height: 20px;  margin-top: 20px;  }
 .tutor .tutor-center .icon{  }
@@ -87,7 +87,8 @@
 .happy .journalism ul li{  float: left;  width: 480px;  height: 50px;  text-align: center;  margin-top: 10px; }
 .happy .journalism ul li .elos{  width: 30px;height: 30px;background: red;color: #ffffff;line-height: 30px; }
 .happy .journalism ul li .elos-p{  position: relative;  margin-top: -28px;  cursor: pointer; }
-.happy .journalism ul li .elos-p:hover{ color: red; font-weight: bold;}
+.happy .journalism ul li a{ color: black;}
+.happy .journalism ul li a:hover{ color: red; font-weight: bold;}
 /*报名优惠*/
 /*.happy .recruit{ clear: both; width: 960px;  margin: 0 auto;  background: #ffffff; padding-top: 50px;}
 .happy .recruit>p{  text-align: center;  font-size: 20px; margin-top: 20px; }

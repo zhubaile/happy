@@ -3,7 +3,7 @@
     <div class="article">
         <div class="article-title">{$title}</div>
         <div class="article-subhead">
-            <span>来源：{if $copyfrom}{$copyfrom}{else}壹品设计{/if}&nbsp;&nbsp;&nbsp;点击：<b id="hits"></b></span>
+            <span>来源：{if $copyfrom}{$copyfrom}{else}乐学堂{/if}&nbsp;&nbsp;&nbsp;点击：<b id="hits"></b></span>
         </div>
         <!--<div class="article-img">
             <img src="{$thumb}" alt="{$title}">
@@ -11,9 +11,10 @@
         <div class="article-content" >
             {$content}
         </div>
-        <div class="article-footer">
-            <p>上一篇：<a href="{$previous_page[url]}" class="c-333 text-a-underline">{$previous_page[title]}</a></p>
-            <p>下一篇：<a href="{$next_page[url]}"  class="c-333 text-a-underline">{$next_page[title]}</a></p>
+        <div class="article-footer"><!--"{$previous_page[url]}""{$next_page[url]}"-->
+          <!--  {$previous_page[title]}      {$next_page[title]}-->
+            <p>上一篇：<a href="{$next_page[url]}" class="c-333 text-a-underline">{$next_page[title]}</a></p>
+            <p>下一篇：<a href="{$previous_page[url]}"  class="c-333 text-a-underline"> {$previous_page[title]}</a></p>
         </div>
     </div>
 </div>

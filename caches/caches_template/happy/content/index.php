@@ -43,7 +43,7 @@
         <h1>来看看谁带你学习</h1>
         <p>我们的讲师团队由三位主讲和一线名企大牛讲师团组成，主讲带你细致入微，名企讲师带你深入企业内部实战分享</p>
     </div>
-    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=1246a5bf995a58747f42607fea0a17f1&action=lists&catid=11&order=id+DESC&num=3&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">修改</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 3;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'11','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'11','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
+    <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=1246a5bf995a58747f42607fea0a17f1&action=lists&catid=11&order=id+DESC&num=3&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 3;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'11','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'11','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
     <div class="tutor-center">
         <?php $n=1; if(is_array($data)) foreach($data AS $key => $val) { ?>
         <div class="teacher">
@@ -62,16 +62,16 @@
 <div class="journalism">
     <h1>新闻中心</h1>
     <ul>
-        <li><div class="elos">1</div><p class="elos-p">室内装修家装设计师谈技巧客户经常提到的25个问题</p></li>
-        <li><div class="elos">2</div><p class="elos-p">CAD选择对象时选中了不该选中的线条如何取消</p></li>
-        <li><div class="elos">3</div><p class="elos-p">如何辨别郑州室内设计培训班哪里更专业</p></li>
-        <li><div class="elos">4</div><p class="elos-p">郑州设计室内学院邀请您学习客厅什么板更好一点</p></li>
-        <li><div class="elos">5</div><p class="elos-p">室内设计师盘点房子装修后后悔的事情</p></li>
-        <li><div class="elos">6</div><p class="elos-p">一品讲解室内设计软件培训CAD常见的几个问题</p></li>
-        <li><div class="elos">7</div><p class="elos-p">CAD软件里输入问题后双击不能编辑文字了怎么办</p></li>
-        <li><div class="elos">8</div><p class="elos-p">解决如何在CAD中把两个室内设计施工图拼接成一张图纸</p></li>
-        <li><div class="elos">9</div><p class="elos-p">CAD软件中文修复几个最有效的办法-乐学堂知道</p></li>
-        <li><div class="elos">10</div><p class="elos-p">常见的室内装修风格都有哪些？家装风格大全</p></li>
+        <li><div class="elos">1</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=23">1:网络游戏的定义</a></p></li>
+        <li><div class="elos">2</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=22">2、计算机技术对我们生活的影响</a></p></li>
+        <li><div class="elos">3</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=21">3、计算机的特点</a></p></li>
+        <li><div class="elos">4</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=20">4、计算机发展的弊端</a></p></li>
+        <li><div class="elos">5</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=19">5、万物互联</a></p></li>
+        <li><div class="elos">6</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=18">6、计算机的影响</a></p></li>
+        <li><div class="elos">7</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=17">7、计算机发展的四个阶段</a></p></li>
+        <li><div class="elos">8</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=16">8、IT未来发展的几大趋势</a></p></li>
+        <li><div class="elos">9</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=7">9、IT面试中常见的问题</a></p></li>
+        <li><div class="elos">10</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=6">10、2017年IT行业就业前景分析</a></p></li>
     </ul>
 </div>
 <div class="clearfix"></div><!--清除浮动 清浮动还是没用好啊-->
