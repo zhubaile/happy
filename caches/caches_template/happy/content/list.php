@@ -4,13 +4,13 @@
  <div class="list-box">-->
 <ul class="clearfix">
     <?php $n=1; if(is_array($data)) foreach($data AS $key => $val) { ?>
-    <li  class="clearfix">
+    <li class="MyBox">
         <a class="img" href="<?php echo $val['url'];?>">
             <img src="<?php if($val[thumb]) { ?><?php echo thumb($val[thumb],220,170);?><?php } else { ?><?php echo IMG_PATH;?>qk_img/noImg.jpg<?php } ?>" alt="<?php echo $val['title'];?>" title="<?php echo $val['title'];?>"/>
         </a>
         <a class="body" href="<?php echo $val['url'];?>">
-            <span class="head"><?php echo $val['title'];?></span>
-            <span class="info"><?php echo $val['description'];?></span>
+            <div class="head"><?php echo $val['title'];?></div><br/>
+            <div class="info"><?php echo $val['description'];?></div>
         </a>
     </li>
     <?php $n++;}unset($n); ?>

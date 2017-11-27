@@ -6,7 +6,16 @@
         <p>只因专业，所以自信。精研细磨，紧贴社会，时时更新</p>
     </div>
     <div class="outline-font clearfix">
-        <a class="model" href="javascript:;">
+            <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=39c078d46b32ae2361ebea3c9b9c6c6a&action=lists&catid=12&order=id+DESC&num=5&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 5;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'12','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'12','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
+            <?php $n=1; if(is_array($data)) foreach($data AS $key => $val) { ?>
+            <a href="<?php echo $val['url'];?>" class="model">
+                <img src="<?php echo $val['thumb'];?>" alt=""/>
+                <h1><?php echo $val['title'];?></h1>
+                <p>含：ES6，TypeScript，Linux等</p>
+            </a>
+            <?php $n++;}unset($n); ?>
+            <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+       <!-- <a class="model" href="javascript:;">
             <img src="<?php echo IMG_PATH;?>image/shouye/a.png" alt=""/>
             <h1>《javascript语言新发展》</h1>
             <p>含：ES6，TypeScript，Linux等</p>
@@ -30,7 +39,7 @@
             <img src="<?php echo IMG_PATH;?>image/shouye/e.png" alt="" />
             <h1>《MV*框架大集合》</h1>
             <p>含：Veu2，React，Angular2等</p>
-        </a>
+        </a>-->
     </div>
 </div>
 <!--持续学习流程-->
@@ -62,20 +71,14 @@
 <div class="journalism">
     <h1>新闻中心</h1>
     <ul>
-        <li><div class="elos">1</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=23">1:网络游戏的定义</a></p></li>
-        <li><div class="elos">2</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=22">2、计算机技术对我们生活的影响</a></p></li>
-        <li><div class="elos">3</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=21">3、计算机的特点</a></p></li>
-        <li><div class="elos">4</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=20">4、计算机发展的弊端</a></p></li>
-        <li><div class="elos">5</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=19">5、万物互联</a></p></li>
-        <li><div class="elos">6</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=18">6、计算机的影响</a></p></li>
-        <li><div class="elos">7</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=17">7、计算机发展的四个阶段</a></p></li>
-        <li><div class="elos">8</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=16">8、IT未来发展的几大趋势</a></p></li>
-        <li><div class="elos">9</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=7">9、IT面试中常见的问题</a></p></li>
-        <li><div class="elos">10</div><p class="elos-p"><a href="http://localhost/happy/index.php?m=content&c=index&a=show&catid=13&id=6">10、2017年IT行业就业前景分析</a></p></li>
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=cd90a1e2bdc99b0cabf0b15afbc95a55&action=lists&catid=13&order=id+DESC&num=10&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 10;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'13','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'13','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
+        <?php $n=1; if(is_array($data)) foreach($data AS $key => $val) { ?>
+        <li><div class="elos"><?php echo $val['listorder'];?></div><p class="elos-p"><a href="<?php echo $val['url'];?>"><?php echo $val['title'];?></a></p></li>
+        <?php $n++;}unset($n); ?>
+        <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
     </ul>
 </div>
 <div class="clearfix"></div><!--清除浮动 清浮动还是没用好啊-->
-<div class="clearfix"></div><!--为了清除浮动效果-->
 <!--现场考察-->
 <div class="site">
     <h1>现场考察</h1>

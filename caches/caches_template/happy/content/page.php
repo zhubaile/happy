@@ -10,8 +10,8 @@
         <div class="bottom"></div>
     </div>
     <div class="col-auto">
-        <img src="<?php echo IMG_PATH;?>v9/about_ad.png" width="659" height="171" />
-        <h1 class="title"><?php echo $title;?></h1>
+        <!--<img src="<?php echo IMG_PATH;?>v9/about_ad.png" width="659" height="171" />-->
+        <!--<h1 class="title"><?php echo $title;?></h1>-->
         <div class="content">
             <?php echo $content;?>
         </div>

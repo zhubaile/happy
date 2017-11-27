@@ -104,3 +104,4 @@
  | phpcms\libs\classes\attachment.class.php | 175
 <?php exit;?>11-26 14:51:06 | 2 | copy(http://localhost/https:/tb1.bdstatic.com/tb/cms/nickemoji/2-12.png): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
  | phpcms\libs\classes\attachment.class.php | 175
+<?php exit;?>11-27 12:49:08 | 2 | extract() expects parameter 1 to be array, null given | phpcms\modules\content\classes\html.class.php | 182

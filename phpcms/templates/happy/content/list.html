@@ -4,13 +4,13 @@
  <div class="list-box">-->
 <ul class="clearfix">
     {loop $data $key $val}
-    <li  class="clearfix">
+    <li class="MyBox">
         <a class="img" href="{$val[url]}">
             <img src="{if $val[thumb]}{thumb($val[thumb],220,170)}{else}{IMG_PATH}qk_img/noImg.jpg{/if}" alt="{$val[title]}" title="{$val[title]}"/>
         </a>
         <a class="body" href="{$val[url]}">
-            <span class="head">{$val[title]}</span>
-            <span class="info">{$val[description]}</span>
+            <div class="head">{$val[title]}</div><br/>
+            <div class="info">{$val[description]}</div>
         </a>
     </li>
     {/loop}
