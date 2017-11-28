@@ -1,5 +1,5 @@
 <?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","head"); ?>
-<div class="MyBox">
+<div class="details">
     <div class="article">
         <div class="article-title"><?php echo $title;?></div>
         <div class="article-subhead">
