@@ -4,6 +4,7 @@
 /**
  * Created by lenovo on 2017/11/22.
  */
+/*
 var $touch=$("#touch");
 $touch.on("click",function(){
     $(".hide").toggle();
@@ -42,4 +43,51 @@ $sub.on("click",function(){
     }
     alert("提交成功,请耐心等待");
     window.location.reload();
+});*/
+var i=0;
+var timer;
+$(function(){
+    $(".one").eq(0).show().siblings().hide();
+    Showtimer();
+    $(".shuzi").hover(function(){
+        i=$(this).index();
+        show();
+        clearInterval(timer);
+    },function(){
+        show();
+        Showtimer();
+    });
+    $(".zuo").eq(i).click(function(){
+        clearInterval(timer);
+        if(i==0){
+            i=6;
+        }
+        i--;
+        show();
+        Showtimer();
+    });
+    $(".you").eq(i).click(function(){
+        clearInterval(timer);
+        if(i==5){
+            i=-1;
+        }
+        i++;
+        show();
+        Showtimer();
+    });
+
 });
+
+function show(){
+    $(".lbtp").eq(i).fadeIn(300).siblings().fadeOut(300);
+    $(".shuzi").eq(i).addClass("nub").siblings().removeClass("nub");
+}
+function Showtimer(){
+    timer=setInterval(function(){
+        i++;
+        if(i==5){
+            i=0;
+        }
+        show();
+    },2000);
+}
