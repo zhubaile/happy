@@ -3,7 +3,7 @@
     <div class="article">
         <div class="article-title"><?php echo $title;?></div>
         <div class="article-subhead">
-            <span>来源：<?php if($copyfrom) { ?><?php echo $copyfrom;?><?php } else { ?>乐学堂<?php } ?>&nbsp;&nbsp;&nbsp;点击：<b id="hits"></b></span>
+            <span>来源：<?php if($copyfrom) { ?><?php echo $copyfrom;?><?php } else { ?>乐学堂<?php } ?>&nbsp;&nbsp;&nbsp;</span>
         </div>
         <!--<div class="article-img">
             <img src="<?php echo $thumb;?>" alt="<?php echo $title;?>">

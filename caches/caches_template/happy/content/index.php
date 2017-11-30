@@ -11,35 +11,10 @@
             <a href="<?php echo $val['url'];?>" class="model">
                 <img src="<?php echo $val['thumb'];?>" alt=""/>
                 <h1><?php echo $val['title'];?></h1>
-                <p>含：ES6，TypeScript，Linux等</p>
+                <p><?php echo str_cut($val[description],90);?></p>
             </a>
             <?php $n++;}unset($n); ?>
             <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
-       <!-- <a class="model" href="javascript:;">
-            <img src="<?php echo IMG_PATH;?>image/shouye/a.png" alt=""/>
-            <h1>《javascript语言新发展》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="<?php echo IMG_PATH;?>image/shouye/b.png" alt="" />
-            <h1>《大话Nade72般变化》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="<?php echo IMG_PATH;?>image/shouye/c.png" alt="" />
-            <h1>《前端工程化那些事儿》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="<?php echo IMG_PATH;?>image/shouye/d.png" alt="" />
-            <h1>《性能优化与工程师》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="<?php echo IMG_PATH;?>image/shouye/e.png" alt="" />
-            <h1>《MV*框架大集合》</h1>
-            <p>含：Veu2，React，Angular2等</p>
-        </a>-->
     </div>
 </div>
 <!--持续学习流程-->
@@ -55,7 +30,7 @@
     <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=1246a5bf995a58747f42607fea0a17f1&action=lists&catid=11&order=id+DESC&num=3&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 3;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'11','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'11','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
     <div class="tutor-center">
         <?php $n=1; if(is_array($data)) foreach($data AS $key => $val) { ?>
-        <div class="teacher">
+        <div class="teacher clearfix ">
             <img src="<?php if($val[thumb]) { ?><?php echo thumb($val[thumb],220,170);?><?php } else { ?><?php echo IMG_PATH;?>qk_img/noImg.jpg<?php } ?>" alt=""/>
             <div class="teacher-ity">
                 <span class="one"><a  href="<?php echo $val['url'];?>"><?php echo $val['title'];?></a></span>&nbsp;
@@ -70,15 +45,28 @@
 <!-- 新闻中心-->
 <div class="journalism">
     <h1>新闻中心</h1>
-    <ul>
-        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=cd90a1e2bdc99b0cabf0b15afbc95a55&action=lists&catid=13&order=id+DESC&num=10&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 10;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'13','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'13','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
+<ul class="clearfix">
+<?php $num=1 ?>
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=efc8ba60f36af1e0d3d1b1201b2416e4&action=lists&catid=13&order=id+DESC&num=5&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 5;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'13','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'13','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?>
         <?php $n=1; if(is_array($data)) foreach($data AS $key => $val) { ?>
-        <li><div class="elos"><?php echo $val['listorder'];?></div><p class="elos-p"><a href="<?php echo $val['url'];?>"><?php echo $val['title'];?></a></p></li>
+        <li>
+            <span class="elos"><?php echo $num;?></span>
+            <a href="<?php echo $val['url'];?>"><?php echo $val['title'];?></a>
+        </li>
+        <?php $num++; ?>
         <?php $n++;}unset($n); ?>
         <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
+        <?php if(defined('IN_ADMIN')  && !defined('HTML')) {echo "<div class=\"admin_piao\" pc_action=\"content\" data=\"op=content&tag_md5=90aa9722bdbe8a7c4a827149e3f408d7&action=lists&catid=14&order=id+DESC&num=5&page=%24page\"><a href=\"javascript:void(0)\" class=\"admin_piao_edit\">编辑</a>";}$content_tag = pc_base::load_app_class("content_tag", "content");if (method_exists($content_tag, 'lists')) {$pagesize = 5;$page = intval($page) ? intval($page) : 1;if($page<=0){$page=1;}$offset = ($page - 1) * $pagesize;$content_total = $content_tag->count(array('catid'=>'14','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));$pages = pages($content_total, $page, $pagesize, $urlrule);$data = $content_tag->lists(array('catid'=>'14','order'=>'id DESC','limit'=>$offset.",".$pagesize,'action'=>'lists',));}?> <?php $n=1; if(is_array($data)) foreach($data AS $key => $val) { ?>
+
+        <li>
+            <span class="elos"><?php echo $num;?></span>
+            <a href="<?php echo $val['url'];?>"><?php echo $val['title'];?></a>
+        </li> 
+        <?php $num++; ?>
+        <?php $n++;}unset($n); ?> <?php if(defined('IN_ADMIN') && !defined('HTML')) {echo '</div>';}?>
     </ul>
 </div>
-<div class="clearfix"></div><!--清除浮动 清浮动还是没用好啊-->
+<!-- <div class="clearfix"></div> --><!--清除浮动 清浮动还是没用好啊-->
 <!--现场考察-->
 <div class="site">
     <h1>现场考察</h1>

@@ -1,15 +1,17 @@
 {template "content","head"}
+<div class="content-box">
 {pc:content action="lists" catid="$catid" order="id DESC" num="5" page="$page"}
 <!-- <div class="title">{$CATEGORYS[$catid][catname]}</div>
  <div class="list-box">-->
+<div class="title">{$CATEGORYS[$catid][catname]}</div>
 <ul class="clearfix">
     {loop $data $key $val}
     <li class="MyBox">
         <a class="img" href="{$val[url]}">
             <img src="{if $val[thumb]}{thumb($val[thumb],220,170)}{else}{IMG_PATH}qk_img/noImg.jpg{/if}" alt="{$val[title]}" title="{$val[title]}"/>
         </a>
-        <a class="body" href="{$val[url]}">
-            <div class="head">{$val[title]}</div><br/>
+        <a class="clearfix" href="{$val[url]}">
+            <div class="head">{$val[title]}</div>
             <div class="info">{$val[description]}</div>
         </a>
     </li>
@@ -20,4 +22,5 @@
     {$pages}
 </div>
 {/pc}
+</div>
 {template "content","foot"}
