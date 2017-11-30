@@ -39,12 +39,12 @@
             <p>适学对象：具有html，css，javascript基础人员</p>
         </div>-->
         <div class="top">
-            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/01.jpg" alt=""/></div>
-            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/02.jpg" alt=""/></div>
-            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/03.jpg" alt=""/></div>
-            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/04.jpg" alt=""/></div>
-            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/05.jpg" alt=""/></div>
-            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/06.jpg" alt=""/></div>
+            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/1.png" alt=""/></div>
+            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/2.png" alt=""/></div>
+            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/3.png" alt=""/></div>
+            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/4.png" alt=""/></div>
+            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/5.png" alt=""/></div>
+            <div class="lbtp one"><img src="<?php echo IMG_PATH;?>image/lunbo/6.png" alt=""/></div>
         </div>
         <div class="but">
             <ul>

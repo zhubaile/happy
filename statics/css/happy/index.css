@@ -5,7 +5,7 @@
 .clearfix:after {  clear: both;  }
 .clearfix {  *zoom:1;  }
 .happy{ min-width: 1150px; margin: 0 auto;}
-.happy .main{width: 100%; margin: 0 auto; }                   /*前面两项内容 导航栏*/
+.happy .main{width: 100%; margin: 0 auto;}                   /*前面两项内容 导航栏*/
 .main .main-nav{  width:100%;  margin: 0 auto; background: #34363b;  height: 80px; }
 .main .main-nav .main-nav-le {
     float: left;
@@ -21,10 +21,11 @@
 .main .main-nav .main-nav-ion .ion-t:hover{  background: #2c2e30;  }
 .main .main-nav .main-nav-ion .ion-t a:hover{  color: #fd832a;  }
 /*导航下面的图片，文字和点击试听*/
-.main .main-goal{ width: 100%; height: 400px; margin: 0 auto;}
-.main-goal .top{  position: relative;  width: 100%;  height: 400px;}
+.main .main-goal{ width: 100%; height: 510px; margin: 0 auto; }
+.main-goal .top{  position: relative;  width: 100%;  height: 510px;}
 .main-goal .top .lbtp{ position: absolute;}
-.main-goal .but{  position: absolute;  width: 600px;  height: 30px;  top: 380px; left: 140px;}
+.main-goal .top .lbtp img{ width: 100%; height: 100%;}
+.main-goal .but{  position: absolute;  width: 500px;  height: 30px;  top: 450px; left: 50%; margin-left: -250px;}
 .but ul{  list-style-type: none; }
 .but ul li{  list-style: none; }
 .shuzi{  background-color: blue;  float: left;  width: 35px;  height: 35px;  text-align: center;

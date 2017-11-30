@@ -85,7 +85,7 @@ function show(){
 function Showtimer(){
     timer=setInterval(function(){
         i++;
-        if(i==5){
+        if(i==6){
             i=0;
         }
         show();
