@@ -11,35 +11,10 @@
             <a href="{$val[url]}" class="model">
                 <img src="{$val[thumb]}" alt=""/>
                 <h1>{$val[title]}</h1>
-                <p>含：ES6，TypeScript，Linux等</p>
+                <p>{str_cut($val[description],90)}</p>
             </a>
             {/loop}
             {/pc}
-       <!-- <a class="model" href="javascript:;">
-            <img src="{IMG_PATH}image/shouye/a.png" alt=""/>
-            <h1>《javascript语言新发展》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="{IMG_PATH}image/shouye/b.png" alt="" />
-            <h1>《大话Nade72般变化》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="{IMG_PATH}image/shouye/c.png" alt="" />
-            <h1>《前端工程化那些事儿》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="{IMG_PATH}image/shouye/d.png" alt="" />
-            <h1>《性能优化与工程师》</h1>
-            <p>含：ES6，TypeScript，Linux等</p>
-        </a>
-        <a class="model" href="javascript:;">
-            <img src="{IMG_PATH}image/shouye/e.png" alt="" />
-            <h1>《MV*框架大集合》</h1>
-            <p>含：Veu2，React，Angular2等</p>
-        </a>-->
     </div>
 </div>
 <!--持续学习流程-->
@@ -55,7 +30,7 @@
     {pc:content action="lists" catid="11" order="id DESC" num="3" page="$page"}
     <div class="tutor-center">
         {loop $data $key $val}
-        <div class="teacher">
+        <div class="teacher clearfix ">
             <img src="{if $val[thumb]}{thumb($val[thumb],220,170)}{else}{IMG_PATH}qk_img/noImg.jpg{/if}" alt=""/>
             <div class="teacher-ity">
                 <span class="one"><a  href="{$val[url]}">{$val[title]}</a></span>&nbsp;
@@ -70,15 +45,28 @@
 <!-- 新闻中心-->
 <div class="journalism">
     <h1>新闻中心</h1>
-    <ul>
-        {pc:content action="lists" catid="13" order="id DESC" num="10" page="$page"}
+<ul class="clearfix">
+<?php $num=1 ?>
+        {pc:content action="lists" catid="13" order="id DESC" num="5" page="$page"}
         {loop $data $key $val}
-        <li><div class="elos">{$val[listorder]}</div><p class="elos-p"><a href="{$val[url]}">{$val[title]}</a></p></li>
+        <li>
+            <span class="elos">{$num}</span>
+            <a href="{$val[url]}">{$val[title]}</a>
+        </li>
+        {$num++}
         {/loop}
         {/pc}
+        {pc:content action="lists" catid="14" order="id DESC" num="5" page="$page"} {loop $data $key $val}
+
+        <li>
+            <span class="elos">{$num}</span>
+            <a href="{$val[url]}">{$val[title]}</a>
+        </li> 
+        {$num++}
+        {/loop} {/pc}
     </ul>
 </div>
-<div class="clearfix"></div><!--清除浮动 清浮动还是没用好啊-->
+<!-- <div class="clearfix"></div> --><!--清除浮动 清浮动还是没用好啊-->
 <!--现场考察-->
 <div class="site">
     <h1>现场考察</h1>
