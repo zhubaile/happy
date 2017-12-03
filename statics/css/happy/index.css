@@ -93,10 +93,7 @@
 .tutor .tutor-top p{  font-size: 18px;  margin-top: 20px; }
 .tutor .tutor-center{ padding-bottom: 20px; }
 /* .tutor .tutor-center .teacher{  clear: both;  width: 900px;  margin: 30px auto;  height: 220px; } */
-.tutor .tutor-center .teacher {
-        padding: 30px 0;
-        border-bottom: 1px solid #ddd;
-}
+.tutor .tutor-center .teacher {  padding: 30px 0;  border-bottom: 1px solid #ddd;}
 .tutor .tutor-center .teacher img{ float: left;}
 .tutor .tutor-center .teacher .teacher-ity{  float: left; margin-top: 50px; margin-left: 20px; width: 500px; }
 .tutor .tutor-center .teacher .teacher-ity .one{  font-size: 20px;  font-weight: bold;  margin: 10px; }
@@ -121,8 +118,6 @@
     line-height: 25px;
     color: #373737;
 }
-
-
 /*.tutor .tutor-center .icon{  }
 .tutor .tutor-center .icon .icon-ico{  float: left;  margin-left: 30px; margin-bottom: 50px; }
 .tutor .tutor-center .icon .icon-ico p{  text-align: center;  cursor: pointer; }
@@ -190,10 +185,9 @@
 .happy .site img{  width: 100%;  /* height: 400px; */}
 /*底部*/
 .happy .end{   background: #323232;  text-align: center;  padding: 20px;line-height: 32px;}
-.end ul li {
-    color: #666;
-}
+.end ul li {  color: #666;}
 
+/*外部界面列表框*/
 .MyBox {
     margin: 10px auto;
     height: 200px;
@@ -244,12 +238,6 @@
     line-height: 24px;
     min-height: 800px;
 }
-.details .article-content {
-    font-size: 14px;
-    line-height: 24px;
-    min-height: 800px;
-}
-
 .details .article-footer {
     padding: 30px 0;
     font-size: 14px;
@@ -281,14 +269,13 @@
 }
 
 /*page*/
-
+/*
 .page {
     text-align: center;
     font-size: 14px;
     line-height: 34px;
     padding: 20px 0;
 }
-
 .page a {
     border: 1px solid #4a4a4a;
     background-color: #fff;
@@ -296,7 +283,6 @@
     display: inline-block;
     color: #4a4a4a;
 }
-
 .page span {
     border: 1px solid #4a4a4a;
     background-color: #4a4a4a;
@@ -304,11 +290,9 @@
     display: inline-block;
     color: #fff;
 }
-
 .page a:hover {
     text-decoration: underline;
 }
-
 .page a.a1,
 .page a.a1:hover {
     color: #fff;
@@ -316,4 +300,4 @@
     border-color: #efefef;
     width: 64px;
     text-decoration: none;
-}
+}*/
