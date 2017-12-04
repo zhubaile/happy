@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>happy/animate.min.css" type="text/css"/>
     <link rel="stylesheet" href="<?php echo CSS_PATH;?>happy/index.css" type="text/css"/>
     <script src="<?php echo JS_PATH;?>happy/jquery/jquery.js"></script>
+    <link rel="shortcut icon" href="favicon.ico"/>
 </head>
 <body>
 <div class="happy">
